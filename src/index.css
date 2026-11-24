@@ -244,9 +244,9 @@ html:not([lang="en"]) .poster-links .link{overflow-wrap:anywhere}
 .gallery-grid .evidence-figure--wide .evidence-frame{aspect-ratio:auto}
 .gallery-grid .evidence-figure--wide img{height:auto;max-height:440px}
 .project-details .poster-viewer{margin-top:0}
-.work__img--portrait{width:min(100%,380px);justify-self:center}
+.work__img--portrait{width:min(100%,520px);justify-self:center}
 .work__img--portrait .media{background:transparent}
-.work__img--portrait img{object-fit:contain;padding:12px}
+.work__img--portrait img{object-fit:contain;padding:0}
 .work__img--landscape img{object-fit:contain}
 .work__text>.link{margin-top:12px}
 .hero-intro__cta:hover,.link:hover{color:var(--forest)}
@@ -261,7 +261,7 @@ html:not([lang="en"]) .poster-links .link{overflow-wrap:anywhere}
  .gallery-grid{grid-template-columns:1fr;gap:24px}
  .evidence-figure--hero img{max-height:260px}
  .evidence-figure--portrait img{height:260px}
- .work__img--portrait{max-width:260px}
+ .work__img--portrait{max-width:320px}
 }
 
 /* Shared focus and compact small-screen composition. */
