@@ -31,7 +31,7 @@ before considering history cleanup, which requires the owner's explicit approval
 ## Maintenance and checks
 
 Use npm ci and commit package-lock.json for dependency changes. Run npm run lint,
-npm run security:check, npm audit, npm run build, and npm run security:check -- --dist.
+npm run security:check, npm audit --registry=https://registry.npmjs.org, npm run build, and npm run security:check -- --dist.
 The custom scanner catches selected credential formats, unsafe source patterns,
 tracked sensitive filenames, and unwanted build artifacts. It is not exhaustive:
 it does not replace history scanning, binary metadata inspection, or manual review.

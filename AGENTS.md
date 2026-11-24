@@ -15,7 +15,7 @@ information, alter media, rewrite Git history, or remove features without approv
 Review new media for GPS, EXIF, XMP, usernames, device details, and visible private
 information before publication. A hidden PDF toolbar never prevents downloading.
 
-Run npm run lint, npm run security:check, npm audit, npm run build, and
+Run npm run lint, npm run security:check, npm audit --registry=https://registry.npmjs.org, npm run build, and
 npm run security:check -- --dist. Test routes, menu, disclosures, media, and poster
 viewer after changes. No new dependencies without a concrete need. Preserve the
 lockfile and pin Actions to verified full commit SHAs with least job permissions.

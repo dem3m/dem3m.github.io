@@ -36,7 +36,7 @@ jobs:
         run: |
           npm run lint
           npm run security:check
-          npm audit --audit-level=low
+          npm audit --audit-level=low --registry=https://registry.npmjs.org
       - name: Build
         run: npm run build
       - name: Check production output

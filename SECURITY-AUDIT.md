@@ -14,7 +14,9 @@ dependency vulnerabilities are outside verified coverage.
 
 No critical or high findings were identified. This is a dated review, not a
 guarantee of absence of secrets, private data, vulnerabilities, or licensing issues.
-All changes remain local until explicitly published.
+Security improvements were published after owner approval. The first deployment
+was blocked by an advisory found by the public npm registry; the compatible
+dependency patch and registry consistency fix were then applied before retrying.
 
 ## Findings by severity
 
@@ -112,17 +114,24 @@ or backend inputs to sanitize in this implementation.
 - SECURITY.md and AGENTS.md: persistent security, privacy, preservation, incident,
   verification, and manual GitHub settings requirements.
 
-No dependency patches were needed: npm audit reported **zero known vulnerabilities**
-across its 168-package inventory, including development dependencies. React and
+The initial locally configured audit reported zero known vulnerabilities, but
+GitHub's public-registry audit identified GHSA-g3hv-75wg-m249: a moderate-severity
+minimatch denial of service affecting ESLint development tooling (three affected
+package entries, not three independent root vulnerabilities). Compatible lockfile
+patches update ESLint to 10.15.0, @eslint/config-array to 0.23.6, and minimatch to
+11.0.9. The explicit public-registry audit now reports zero known vulnerabilities.
+CI and maintenance instructions explicitly select https://registry.npmjs.org to
+avoid inconsistent advisory results from a locally configured registry. React and
 ReactDOM are application dependencies; Vite/React plugin and ESLint packages are
 used by build/lint. React type packages support editor/type tooling. No genuinely
-unused runtime package was identified; no packages, lockfile entries, or framework
-were changed just to reduce the reported count.
+unused runtime package was identified; runtime dependencies and the framework
+were preserved. Only compatible development-tool security patches were applied.
 
 ## Verification
 
 - npm run lint: passed.
-- npm audit --json: zero vulnerabilities, all severity levels.
+- npm audit --json --registry=https://registry.npmjs.org: zero vulnerabilities
+  after the compatible development-tool patches, all severity levels.
 - npm run build: passed, with the existing missing-font warning above.
 - npm run security:check and npm run security:check -- --dist: passed.
 - git diff --check: passed. Source data, translations, images, PDF and all other
