@@ -14,7 +14,6 @@ export default function Hero() {
           <h1 className="hero-intro__title">{site.name}</h1>
           <p className="hero-intro__discipline">{t("Propulsion/Experimentation/Design")}</p>
           <p className="hero-intro__description">{site.intro}</p>
-          <button type="button" className="hero-intro__cta" onClick={() => document.getElementById("selected-work")?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" })}>{t("Explore my work ")}<span aria-hidden="true">{t("\u2193")}</span></button>
         </div>
         <aside className="hero-focus" aria-label={t("Engineering focus")}>
           <p className="label">{t("FROM CONCEPT TO TEST")}</p>
