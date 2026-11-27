@@ -1,114 +1,114 @@
 {
-    "images/leadership/INITIUMblurred.jpg":  {
-                                                 "height":  1446,
-                                                 "width":  1920
-                                             },
-    "images/leadership/Mentoring1.png":  {
-                                             "height":  957,
-                                             "width":  702
-                                         },
-    "images/project-01/ADAMINTAKETESTING.jpg":  {
-                                                    "height":  1080,
-                                                    "width":  1920
-                                                },
-    "images/project-01/ADAMINTAKETESTING2.jpg":  {
-                                                     "height":  2160,
-                                                     "width":  2880
-                                                 },
-    "images/project-01/ADAMIRL.jpg":  {
-                                          "height":  4080,
-                                          "width":  3072
-                                      },
-    "images/project-01/adam-render.png":  {
-                                              "height":  1980,
-                                              "width":  1980
-                                          },
-    "images/project-01/ADAMwireframerender.png":  {
-                                                      "height":  742,
-                                                      "width":  326
-                                                  },
-    "images/project-01/FEACHART1.png":  {
-                                            "height":  622,
-                                            "width":  1514
-                                        },
-    "images/project-01/FEACHART2.png":  {
-                                            "height":  615,
-                                            "width":  1515
-                                        },
-    "images/project-01/FEACOMPONENT1.png":  {
-                                                "height":  473,
-                                                "width":  981
-                                            },
-    "images/project-01/FEAWORKBENCH.png":  {
-                                               "height":  212,
-                                               "width":  454
-                                           },
-    "images/project-01/RESEARCHEXPO.jpg":  {
-                                               "height":  1608,
-                                               "width":  1206
-                                           },
-    "images/project-01/totalpressure.png":  {
-                                                "height":  1440,
-                                                "width":  2560
-                                            },
-    "images/project-01/velocitmagnitude1.png":  {
-                                                    "height":  1440,
-                                                    "width":  2560
-                                                },
-    "images/project-02/EDFTesting.jpg":  {
-                                             "height":  3072,
-                                             "width":  4080
-                                         },
-    "images/project-02/fourmotorthrust.png":  {
-                                                  "height":  415,
-                                                  "width":  861
-                                              },
-    "images/project-02/LILITH.jpg":  {
-                                         "height":  2160,
-                                         "width":  2880
-                                     },
-    "images/project-02/lilithcfd3.png":  {
-                                             "height":  879,
-                                             "width":  1725
-                                         },
-    "images/project-02/lilithwithadam.png":  {
-                                                 "height":  610,
-                                                 "width":  1023
-                                             },
-    "images/project-02/MRFLILITH.png":  {
-                                            "height":  251,
-                                            "width":  503
-                                        },
-    "images/project-02/MRFLILITH2.png":  {
-                                             "height":  554,
-                                             "width":  1029
-                                         },
-    "images/project-03/assembled-test-cell.jpg":  {
-                                                      "height":  3456,
-                                                      "width":  4608
-                                                  },
-    "images/project-03/ESP32DAQ.jpg":  {
-                                           "height":  4080,
-                                           "width":  3072
-                                       },
-    "images/project-03/ESP32DAQUpdated.jpg":  {
-                                                  "height":  4080,
-                                                  "width":  3072
-                                              },
-    "images/project-03/p100-front.jpg":  {
-                                             "height":  3456,
-                                             "width":  4608
-                                         },
-    "images/project-03/p100-test-stand.jpg":  {
-                                                  "height":  3456,
-                                                  "width":  4608
-                                              },
-    "images/project-03/TESTING1Blurred.jpg":  {
-                                                  "height":  1440,
-                                                  "width":  1920
-                                              },
-    "images/project-03/Testing2.png":  {
-                                           "height":  1300,
-                                           "width":  1080
-                                       }
+  "images/leadership/INITIUMblurred.jpg": {
+    "width": 1600,
+    "height": 1205
+  },
+  "images/leadership/Mentoring1.png": {
+    "width": 702,
+    "height": 957
+  },
+  "images/project-01/ADAMINTAKETESTING.jpg": {
+    "width": 1600,
+    "height": 900
+  },
+  "images/project-01/ADAMINTAKETESTING2.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/project-01/ADAMIRL.jpg": {
+    "width": 1355,
+    "height": 1800
+  },
+  "images/project-01/adam-render.png": {
+    "width": 1600,
+    "height": 1600
+  },
+  "images/project-01/ADAMwireframerender.png": {
+    "width": 326,
+    "height": 742
+  },
+  "images/project-01/FEACHART1.png": {
+    "width": 1514,
+    "height": 622
+  },
+  "images/project-01/FEACHART2.png": {
+    "width": 1515,
+    "height": 615
+  },
+  "images/project-01/FEACOMPONENT1.png": {
+    "width": 981,
+    "height": 473
+  },
+  "images/project-01/FEAWORKBENCH.png": {
+    "width": 454,
+    "height": 212
+  },
+  "images/project-01/RESEARCHEXPO.jpg": {
+    "width": 1206,
+    "height": 1608
+  },
+  "images/project-01/totalpressure.png": {
+    "width": 1600,
+    "height": 900
+  },
+  "images/project-01/velocitmagnitude1.png": {
+    "width": 1600,
+    "height": 900
+  },
+  "images/project-02/EDFTesting.jpg": {
+    "width": 1600,
+    "height": 1205
+  },
+  "images/project-02/fourmotorthrust.png": {
+    "width": 861,
+    "height": 415
+  },
+  "images/project-02/LILITH.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/project-02/lilithcfd3.png": {
+    "width": 1600,
+    "height": 815
+  },
+  "images/project-02/lilithwithadam.png": {
+    "width": 1023,
+    "height": 610
+  },
+  "images/project-02/MRFLILITH.png": {
+    "width": 503,
+    "height": 251
+  },
+  "images/project-02/MRFLILITH2.png": {
+    "width": 1029,
+    "height": 554
+  },
+  "images/project-03/assembled-test-cell.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/project-03/ESP32DAQ.jpg": {
+    "width": 1355,
+    "height": 1800
+  },
+  "images/project-03/ESP32DAQUpdated.jpg": {
+    "width": 1355,
+    "height": 1800
+  },
+  "images/project-03/p100-front.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/project-03/p100-test-stand.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/project-03/TESTING1Blurred.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "images/project-03/Testing2.png": {
+    "width": 1080,
+    "height": 1300
+  }
 }

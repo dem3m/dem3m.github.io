@@ -6,7 +6,7 @@ export default function Expertise() {
   return (
     <section className="band">
       <div className="wrap section">
-        <div className="grid rule"><h2 className="label c-12">{t("TECHNICAL EXPERTISE")}</h2></div>
+        <div className="grid rule"><h2 className="label c-12">{t("Technical expertise")}</h2></div>
         <div className="grid exp">
           {expertise.map((e) => (
             <div key={e.title} className="exp__item">

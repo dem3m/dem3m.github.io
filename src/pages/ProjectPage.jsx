@@ -53,8 +53,8 @@ export default function ProjectPage({ id }) {
   const p = projects.find((project) => project.id === id);
   if (!p) return (
     <section className="wrap section">
-      <h1 className="display sm">{t("NOT FOUND.")}</h1>
-      <a className="link" href="#/">&larr; {t("HOME")}</a>
+      <h1 className="display sm">{t("Not found.")}</h1>
+      <a className="link" href="#/">&larr; {t("Home")}</a>
     </section>
   );
 
@@ -68,16 +68,16 @@ export default function ProjectPage({ id }) {
   return (
     <section key={p.id} className="wrap section project-page">
       <div className="grid rule">
-        <p className="label c-6">{t("PROJECT")} {p.id} / 03</p>
+        <p className="label c-6">{t("Project")} {p.id} / 03</p>
         <p className="label c-6 right">{p.category}</p>
       </div>
       <h1 className="display sm">{p.title}</h1>
 
       <div className="project-intro">
         <div className="project-intro__copy">
-          <h2 className="label">{t("OVERVIEW")}</h2>
+          <h2 className="label">{t("Overview")}</h2>
           <p className="lead">{p.summary}</p>
-          <p className="project-role"><span className="label">{t("ROLE")}</span>{p.role}</p>
+          <p className="project-role"><span className="label">{t("Role")}</span>{p.role}</p>
           {p.contribution && <div className="project-contribution"><h2 className="label">My contribution</h2><p>{p.contribution}</p></div>}
           {p.link?.url && <a className="link" href={p.link.url} target="_blank" rel="noreferrer">{p.link.label}</a>}
         </div>
@@ -121,15 +121,15 @@ export default function ProjectPage({ id }) {
           </Details>
         </Block>)}
 
-        {has(p.other) && <Block label="OTHER INCLUDED WORK">
+        {has(p.other) && <Block label="Other included work">
           <Bullets items={p.other} />
           {has(p.otherMedia) && <Evidence items={p.otherMedia} />}
         </Block>}
 
-        {p.researchPoster && <Block label="RESEARCH POSTER">
+        {p.researchPoster && <Block label="Research poster">
           <h3 className="poster-title">{p.researchPoster.title}</h3>
           <p>{p.researchPoster.description}</p>
-          <div className="poster-links"><a className="link" href={p.researchPoster.url} target="_blank" rel="noreferrer">{t("OFFICIAL ERAU SCHOLARLY COMMONS PAGE")} &#8599;</a></div>
+          <div className="poster-links"><a className="link" href={p.researchPoster.url} target="_blank" rel="noreferrer">{t("Official ERAU Scholarly Commons page")} &#8599;</a></div>
           <Details label="Read the research poster">
             <iframe className="poster-viewer" src={`${base}${p.researchPoster.pdf}#toolbar=0&navpanes=0&view=FitH`} title={p.researchPoster.title} loading="lazy" />
           </Details>
@@ -141,15 +141,15 @@ export default function ProjectPage({ id }) {
         </Block>}
 
         {(p.background || has(p.grants) || p.poster) && <Details label="Project background, grants and awards">
-          {p.background && <><h2 className="sub">{t("BACKGROUND")}</h2><p>{p.background}</p></>}
-          {has(p.grants) && <><h2 className="sub">{t("GRANTS & AWARDS")}</h2><Bullets items={p.grants} /></>}
-          {p.poster && <a className="link" href={`${base}${p.poster}`} target="_blank" rel="noreferrer">{t("VIEW POSTER")} &#8599;</a>}
+          {p.background && <><h2 className="sub">{t("Background")}</h2><p>{p.background}</p></>}
+          {has(p.grants) && <><h2 className="sub">{t("Grants & awards")}</h2><Bullets items={p.grants} /></>}
+          {p.poster && <a className="link" href={`${base}${p.poster}`} target="_blank" rel="noreferrer">{t("View poster")} &#8599;</a>}
         </Details>}
       </div>
 
       <div className="grid rule top">
-        <a className="link c-6" href="#/">&larr; {t("HOME")}</a>
-        <a className="link c-6 right" href={`#/project/${next.id}`}>{t("NEXT: PROJECT")} {next.id} &#8599;</a>
+        <a className="link c-6" href="#/">&larr; {t("Home")}</a>
+        <a className="link c-6 right" href={`#/project/${next.id}`}>{t("Next: project")} {next.id} &#8599;</a>
       </div>
     </section>
   );

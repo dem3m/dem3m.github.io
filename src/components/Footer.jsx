@@ -4,12 +4,12 @@ export default function Footer() {
   const { site } = useContent();
   const { t } = useLanguage();
   return (
-    <footer className="foot">
+    <footer className="foot mat">
       <div className="wrap">
         <div className="grid foot__top">
           <div className="c-6">
             <p className="foot__name">{site.name}</p>
-            <p className="label">{t("AEROSPACE ENGINEERING")}</p>
+            <p className="label">{t("Aerospace engineering")}</p>
           </div>
           <div className="c-6 foot__contact">
             <h2 className="label">Contact:</h2>

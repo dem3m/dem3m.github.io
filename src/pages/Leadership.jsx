@@ -6,7 +6,7 @@ export default function Leadership() {
   const { t } = useLanguage();
   return (
     <section className="wrap section leadership-page">
-      <div className="grid rule"><p className="label c-6">{t("LEADERSHIP & MANAGEMENT")}</p><p className="label c-6 right">{t("TEAM DEVELOPMENT & MENTORSHIP")}</p></div>
+      <div className="grid rule"><p className="label c-6">{t("Leadership & management")}</p><p className="label c-6 right">{t("Team development & mentorship")}</p></div>
       <h1 className="display sm">Leadership and Management</h1>
       <div className="leadership-list">
         {leadership.map((role) => (
@@ -42,7 +42,7 @@ export default function Leadership() {
           </article>
         ))}
       </div>
-      <div className="grid rule top"><a className="link c-6" href="#/">{t("\u2190 HOME")}</a></div>
+      <div className="grid rule top"><a className="link c-6" href="#/">{t("\u2190 Home")}</a></div>
     </section>
   );
 }
